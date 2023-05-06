@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Web Page</title>
+    <style>
+      /* CSS for the header */
+      .header {
+        background-color: #4927f0;
+        color: white;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      /* CSS for the logo */
+      .logo {
+        width: 10%;
+        height: 10%;
+      }
+
+      /* CSS for the menu */
+      .menu {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        margin-right: 30px;
+        position: relative;
+      }
+
+      .menu li:hover ul {
+        display: block;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+        display: block;
+      }
+
+      .menu ul {
+        display: none;
+        position: absolute;
+        top: 40px;
+        left: 0;
+        background-color: #333;
+        padding: 0;
+        margin: 0;
+        font-size: medium;
+      }
+
+      .menu ul li {
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu ul a {
+        padding: 10px;
+        display: block;
+        color: white;
+        text-decoration: underline;
+      }
+
+      /* CSS for the search bar */
+      .search-form {
+        display: flex;
+        align-items: center;
+      }
+
+      .search-form input[type='text'] {
+        border: none;
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+      }
+
+      .search-form button {
+        background-color: #a6f9b0;
+        color: black;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <a href="https://antra.net" class="logo">Antra</a> -->
+      <img
+        class="logo"
+        src="https://antra.com/wp-content/uploads/2023/03/Antra-black.png"
+      />
+      <nav>
+        <ul class="menu">
+          <li><a href="https://antra.com/blog/">News</a></li>
+          <li>
+            <a href="#">About The University</a>
+            <ul>
+              <li><a href="https://antra.com/about-us/">History</a></li>
+              <li><a href="https://antra.com/about-us/">Alumni</a></li>
+              <li><a href="https://antra.com/about-us/">Team</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Courses</a>
+            <ul>
+              <li><a href="https://antra.com/about-us/">History</a></li>
+              <li><a href="https://antra.com/about-us/">Alumni</a></li>
+              <li><a href="https://antra.com/about-us/">Team</a></li>
+            </ul>
+          </li>
+          <li><a href="#">For Company</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="https://antra.com/contact/">Contact</a></li>
+        </ul>
+      </nav>
+      <section>
+        <ul class="menu">
+          <li>
+            <a href="#">User</a>
+            <ul>
+              <li>User1</li>
+              <li>User2</li>
+              <li>User3</li>
+            </ul>
+          </li>
+        </ul>
+        <form class="search-form">
+          <input type="text" placeholder="Search..." />
+          <button type="submit">Search</button>
+        </form>
+      </section>
+    </header>
+  </body>
+</html>
